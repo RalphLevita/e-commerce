@@ -15,7 +15,7 @@ app.get("/", (req, res, next) => {
 // Connecting Routes
 app.use("/auth", require("./Routes/auth.routes"));
 app.use("/product", require("./Routes/product.routes"));
-
+app.use("/orders", require("./Routes/order.routes"));
 // Error Handler Middleware
 app.use(errorHandler);
 
