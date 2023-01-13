@@ -10,24 +10,8 @@ const orderSchema = new mongoose.Schema({
     type: Number,
     required: [true, "Please provide a quantity"],
   },    
-  addressOfDelivery: {
-    type: String,
-    required: [true, "Please provide a product Description"],
-  },
-  paymentMethod: {
-    type: String,
-    required: [true, "Please provide a payment Method"],
-  },
-  voucherId: {
-    type: ObjectId,
-    default: null
-  },
   userId: {
     type: ObjectId,
-    required: true,
-  },
-  shippingId: {
-    type: String,
     required: true,
   },
   isDeleted: {
