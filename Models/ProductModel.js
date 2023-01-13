@@ -15,11 +15,11 @@ const productSchema = new mongoose.Schema({
     required: [true, "Please provide a product Description"],
   },
   productImage: {
-    type: array,
+    type: Array,
     required: [true, "Please input an Image"],
   },
   quantity: {
-    type: number,
+    type: Number,
     required: [true, "Please input quantity of product"],
   },
   adminId: {
@@ -30,7 +30,8 @@ const productSchema = new mongoose.Schema({
     type: Boolean,
     default: false,
   },
-});
+},
+{ timestamps: true });
 
 const Product = mongoose.model("Product", productSchema);
 
